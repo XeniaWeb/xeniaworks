@@ -1,0 +1,47 @@
+.main-nav {
+  //display: block;
+  display: none;
+  width: 320px;
+}
+
+.main-nav__list {
+  display: block;
+  background: $white;
+}
+
+.main-nav__toggle {
+  background: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  right: 17px;
+  top: 12px;
+  bottom: 50px;
+}
+
+.main-nav__cross-icon {
+  fill: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: block;
+    width: $tablet-width;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: $desktop-width;
+  }
+}

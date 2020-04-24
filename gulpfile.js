@@ -46,7 +46,7 @@ gulp.task("images", function () {
       imagemin.mozjpeg({quality: 75, progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/img/imgopt"));
+    .pipe(gulp.dest("source/imgopt"));
 });
 
 gulp.task("sprite", function () {
@@ -70,7 +70,7 @@ gulp.task("html", function () {
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/imgopt/*.webp",
+    // "source/imgopt/*.webp",
     "source/js/**",
     "source/*.ico",
     "source/*.html"
@@ -115,9 +115,9 @@ gulp.task("build", gulp.series(
   "clean",
   "copy",
   "copy-images",
+  "style",
   "sprite",
-  "html",
-  "style"
+  "html"
 ))
 ;
 
