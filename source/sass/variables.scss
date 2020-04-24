@@ -1,0 +1,34 @@
+/*colors*/
+
+/*monochrome   dark-to-light*/
+
+$black-30: rgba(0, 0, 0, 0.3);
+$black: #000000;
+$dark: #333333;
+
+$brown-dakr: #604e43;
+$brown: #766357;
+$brown-30: rgba(118, 99, 87, 0.3);
+$grey: #d5d5d5;
+$grey-middle: #e5e5e5;
+$grey-light: #f2f2f2;
+$white: #ffffff;
+$white-30: rgba(255, 255, 255, 0.3);
+
+/*colored   dark-to-light*/
+
+$color-grey: #5c6870;
+//$color-dark: #5496bd;
+$color-dark: #2f4c73;
+//$color-middle: #669ec0;
+$color-middle: #4a678a;
+//$color-light: #81b3d2;
+$color-light: #6381a5;
+
+/*break-points*/
+
+$mobile-only-width: 767px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
