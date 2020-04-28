@@ -2,8 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>XeniaWeb Portfolio</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body>
 <!--If use tasks posthtml and sprite from gulpfile.js-->
@@ -14,7 +22,7 @@
 <header class="page-header page-header--home">
   <div class="page-header__wrapper">
     <div class="page-header__container">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs main-nav--closed">
         <button class="main-nav__toggle main-nav__toggle--off" type="button">
           <svg class="main-nav__cross-icon" width="22" height="22">
             <use xlink:href="#icon-cross"></use>
@@ -23,8 +31,8 @@
         </button>
         <ul class="main-nav__list site-list default-list">
           <li class="site-list__item"><a href="about.html">About</a></li>
-          <li class="site-list__item"><a href="#">Portfolio</a></li>
-          <li class="site-list__item"><a href="#">Photo & Video</a></li>
+          <li class="site-list__item"><a href="portfolio.html">Portfolio</a></li>
+          <li class="site-list__item"><a href="https://www.shutterstock.com/g/OksanaTkacheva" target="_blank">Photo & Video</a></li>
           <li class="site-list__item"><a href="https://xeniaweb.blog/" target="_blank">Blog</a></li>
         </ul>
       </nav>
@@ -33,14 +41,14 @@
           <use xlink:href="#icon-logo-xeniaweb"></use>
         </svg>
       </a>
-    </div>
-    <div class="page-header__logo-block">
-      <button class="main-nav__toggle main-nav__toggle--on" type="button">
+      <button class="page-header__btn-nav" type="button">
         <svg class="main-nav__menu-icon" width="23" height="22">
           <use xlink:href="#icon-menu"></use>
         </svg>
-        <span class="visually-hidden">Открыть меню</span>
+        <span class="visually-hidden">Open menu</span>
       </button>
+    </div>
+    <div class="page-header__logo-block">
     </div>
     <div class="page-header__hero page-header__hero--home">
       <h2 class="visually-hidden">Seewen</h2>
@@ -86,8 +94,8 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://xeniaweb.ru/" target="_blank" title="Xenia WEB">
+      <small class="copyright__text">developed by </small>
+      <a class="copyright__link" href="https://xeniaweb.ch/" target="_blank" title="Xenia WEB">
         <span class="visually-hidden">Oksana Burki</span>
         <svg class="copyright__logo" width="27" height="34">
           <use xlink:href="#icon-logo-xeniaweb"></use>
@@ -97,5 +105,6 @@
   </div>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>

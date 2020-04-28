@@ -10,28 +10,40 @@
 
 .page-header {
   margin: 0 auto;
-  min-height: 70vh;
+  height: 78vh;
   background-color: $grey-middle;
-
   background-origin: border-box, border-box, border-box;
   background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size: auto, 100% 80%, auto;
   border-bottom: 10px solid $white;
 
   &--home {
-    background-image: linear-gradient(to left, transparent 25%, rgba($white, 0.7) 98%),
-    linear-gradient(to top, $white 5%, transparent),
-    url("../img/bg-bayern1.jpg");
-    background-position: 0 0, 100% 100%, right 25%;
-
+    background-image: //linear-gradient(to left, transparent 25%, rgba($white, 0.7) 98%),
+      linear-gradient(to top, $white, rgba($white, 0.7) 15%, transparent),
+      url("../img/bg-bayern1.jpg");
+    background-position: //0 0,
+      100% 100%,
+      right 0;
+    background-size: //auto,
+      100% 80%,
+      auto 800px;
   }
 
   &--about {
     background-image: linear-gradient(to right, transparent 25%, rgba($white, 0.5) 98%),
-    linear-gradient(to top, $white 3%, transparent),
-    url("../img/bg-bayern2.jpg");
-    background-position: 0 0, 100% 100%, center 45%;
+      linear-gradient(to top, $white 3%, transparent),
+      url("../img/bg-bayern2.jpg");
+    background-position: 0 0, 100% 100%, 40% 0;
+    background-size: auto, 100% 80%, auto 500px;
+  }
 
+  &--portfolio {
+    height: 60vh;
+
+    background-image: linear-gradient(to right, transparent 25%, rgba($white, 0.5) 98%),
+      linear-gradient(to top, $white 3%, transparent),
+      url("../img/bg-bayern3.jpg");
+    background-position: 0 0, 100% 100%, 80% top;
+    background-size: auto, 100% 80%, auto 500px;
   }
 }
 
@@ -44,20 +56,27 @@
 
 .page-header__container {
   margin: 0 auto;
+  padding-bottom: 20px;
   position: relative;
 }
 
 .page-header__logo-block {
-  background: rgba($white, 0.8);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: transparent;
   box-sizing: border-box;
   position: relative;
   height: 56px;
   z-index: 1;
+
+  small {
+    padding-right: 60px;
+    color: $color-light;
+  }
 }
 
 .page-header__logo {
-
-  //outline: 1px solid red;
   display: block;
   position: absolute;
   width: 135px;
@@ -66,6 +85,10 @@
   left: 0; //50%;
   //margin-left: -68px;
   z-index: 50;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .page-header__logo-image {
@@ -73,14 +96,44 @@
   height: 52px;
 }
 
+.page-header__btn-nav {
+  background: transparent;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+
+  display: block;
+  position: absolute;
+  width: 33px;
+  height: 33px;
+  bottom: -44px;
+  right: 14px;
+  z-index: 20;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    background-color: $grey-light;
+  }
+}
+
+.main-nav--opened ~ .page-header__btn-nav,
+.main-nav--nojs ~ .page-header__btn-nav,
+.main-nav--nojs .main-nav__toggle,
+.main-nav--closed .main-nav__toggle {
+  display: none;
+}
+
 .page-header__hero {
-  margin: 0 auto;
+  margin: 30px auto 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
   min-height: 158px;
   position: relative;
+  padding-left: 50px;
 
   &--home {
     min-height: 389px;
@@ -88,18 +141,47 @@
 }
 
 .page-header__title {
-  margin: 60px 0 10px;
+  margin: 25px 60px 20px 0;
+  font-size: 18px;
+  text-align: right;
 
-  &--home {
-    margin: 100px 0 20px;
-    font-size: 16px;
-    text-align: right;
+  span {
+    display: block;
+    font-family: "Open Sans-bold", "Arial", sans-serif;
+    font-size: 24px;
+    padding-bottom: 30px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
-    margin-bottom: 6px;
+    margin: 0 auto 6px;
+    min-height: 80vh;
+    background-color: $grey-middle;
+    background-origin: border-box, border-box, border-box;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: auto, 100% 80%, auto;
+    border-bottom: 10px solid $white;
+
+    &--home {
+      background-image: linear-gradient(to left, transparent 25%, rgba($white, 0.7) 98%),
+        linear-gradient(to top, $white 5%, transparent),
+        url("../img/bg-bayern1.jpg");
+      background-position: 0 0, 100% 100%, right 25%;
+    }
+
+    &--about {
+      background-image: linear-gradient(to right, transparent 25%, rgba($white, 0.5) 98%),
+        linear-gradient(to top, $white 3%, transparent),
+        url("../img/bg-bayern2.jpg");
+      background-position: 0 0, 100% 100%, center 45%;
+    }
+
+    &--portfolio {
+      height: 40vh;
+      background-position: 0 0, 100% 100%, 60% 20%;
+      background-size: auto, 100% 80%, auto;
+    }
   }
 
   .page-header__wrapper {
@@ -116,35 +198,31 @@
     top: 0;
   }
 
-  .page-header__hero {
-    min-height: 301px;
+  .page-header__btn-nav {
+    display: none;
+  }
 
-    &--home {
-      min-height: 518px;
-      //background-position: center top;
-    }
+  .page-header__hero {
+    align-items: center;
+    min-height: 301px;
   }
 
   .page-header__title {
     width: 460px;
     height: 80px;
-    margin-top: 95px;
+    margin: 95px 60px 20px 0;
+    font-size: 18px;
+    text-align: right;
+    padding-left: 100px;
 
-    &--home {
-      width: 460px;
-      height: 350px;
-      margin-top: 95px;
-      padding-left: 100px;
-      text-align: right;
+    span {
+      font-family: "Open Sans-bold", "Arial", sans-serif;
+      font-size: 24px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-header {
-    //background-image: url("../img/bg-back-see1-desktop@1x.jpg");
-  }
-
   .page-header__wrapper {
     width: $desktop-width;
   }
@@ -153,7 +231,6 @@
     min-height: 301px;
 
     &--home {
-      //min-height: 518px;
       height: 80vh;
     }
 

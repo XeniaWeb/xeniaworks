@@ -1,6 +1,7 @@
 .social__list {
   display: flex;
   margin: 0 auto 20px;
+  padding-top: 5px;
   justify-items: center;
   align-items: center;
   justify-content: space-around;
@@ -14,19 +15,17 @@
   width: 46px;
   height: 46px;
   background: transparent;
-  border: 1px solid rgba($color-logo, 0.3);
+  border: 1px solid rgba($color-dark, 0.3);
   border-radius: 5px;
 
   &:hover {
-    background: rgba($color-logo, 0.1);
+    background: rgba($color-dark, 0.1);
   }
 }
 
 .social__link-image {
   padding-top: 7px;
-  fill: $color-logo;
-
-
+  fill: $color-dark;
 
   &:active {
     fill: rgba($white, 0.3);

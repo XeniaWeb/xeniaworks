@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XeniaWeb Portfolio</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffc40d">
+  <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<!--If use tasks posthtml and sprite from gulpfile.js-->
+<div class="svg-sprite">
+  <include src="build/img/sprite.svg"></include>
+</div>
+
+<header class="page-header page-header--portfolio">
+  <div class="page-header__wrapper">
+    <div class="page-header__container">
+      <nav class="main-nav main-nav--nojs main-nav--closed">
+        <button class="main-nav__toggle main-nav__toggle--off" type="button">
+          <svg class="main-nav__cross-icon" width="22" height="22">
+            <use xlink:href="#icon-cross"></use>
+          </svg>
+          <span class="visually-hidden">Close menu</span>
+        </button>
+        <ul class="main-nav__list site-list default-list">
+
+          <li class="site-list__item"><a href="about.html">About</a></li>
+          <li class="site-list__item site-list__item--active">
+            <a>Portfolio</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://www.shutterstock.com/g/OksanaTkacheva" target="_blank">Photo & Video</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://xeniaweb.blog" target="_blank">Blog</a>
+          </li>
+          <li class="site-list__item site-list__item--home"><a href="index.html">Home</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="index.html" class="page-header__logo" title="to home">
+        <svg class="page-header__logo-image" width="180" height="70">
+          <use xlink:href="#icon-logo-xeniaweb"></use>
+        </svg>
+      </a>
+      <button class="page-header__btn-nav" type="button">
+        <svg class="main-nav__menu-icon" width="23" height="22">
+          <use xlink:href="#icon-menu"></use>
+        </svg>
+        <span class="visually-hidden">Open menu</span>
+      </button>
+    </div>
+    <div class="page-header__logo-block">
+      <small>About</small>
+    </div>
+    <div class="page-header__hero page-header__hero--home">
+      <h2 class="visually-hidden">Seewen</h2>
+      <p class="page-header__title">
+        <span>Web Development</span>
+        xemia1898@gmail.com <br>
+        +7-923-100-918
+      </p>
+      <!--      <svg class="page-header__title page-header__title&#45;&#45;home" width="281" height="214">-->
+      <!--        <use xlink:href="#text-seewen-big"></use>-->
+      <!--      </svg>-->
+    </div>
+  </div>
+</header>
+<main class="page-main">
+  <section class="works">
+    <div class="works__wrapper">
+      <div class="works__heading">
+        <h2 class="works__title">What I do</h2>
+        <p class="works__intro">
+          My works <br>
+          <span>&dArr;</span>
+        </p>
+      </div>
+      <ul class="works__list default-list">
+
+
+        <li class="works__item work">
+          <div class="work__description">
+            <h3 class="work__title">
+              Project "Seewen"
+            </h3>
+            <p class="work__about">
+              This is a wonderful project.
+            </p>
+            <p class="work__technologies">
+              <span>Technologies used: </span><br>
+              HTML5, CSS3, SASS, JavaScript, Gulp, Git, NPM
+            </p>
+            <a href="https://xeniaweb.site" class="work__link" target="_blank">
+              View this project
+            </a>
+            <a href="https://github.com/XeniaTkacheva/830487-sedona-19" class="work__link" target="_blank">
+              View project's code
+            </a>
+          </div>
+          <a href="#" class="work__picture">
+            <picture>
+              <img src="img/work1.jpg" alt="Photo my work" class="work__image" width="280" height="280">
+            </picture>
+          </a>
+        </li>
+        <li class="works__item work">
+          <div class="work__description">
+            <h3 class="work__title">
+              Project "Rosa Shop" PHP Laravel
+            </h3>
+            <p class="work__about">
+              This is a wonderful project.
+            </p>
+            <p class="work__technologies">
+              <span>Technologies used: </span><br>
+              PHP, Laravel, OOP, MVC, Git
+            </p>
+            <a href="https://laravel.xenia-tkacheva.ru/home" class="work__link" target="_blank">
+              View this project
+            </a>
+            <a href="https://github.com/XeniaTkacheva/RosaShop" class="work__link" target="_blank">
+              View project's code
+            </a>
+          </div>
+          <a href="#" class="work__picture">
+            <picture>
+              <img src="img/work6.jpg" alt="Photo my work" class="work__image" width="280" height="280">
+            </picture>
+          </a>
+        </li>
+        <li class="works__item work">
+          <div class="work__description">
+            <h3 class="work__title">
+              Project "Russian XVIII" PHP
+            </h3>
+            <p class="work__about">
+              This is a wonderful project.
+            </p>
+            <p class="work__technologies">
+              <span>Technologies used: </span><br>
+              PHP, WordPress, HTML5, CSS3, SASS, JavaScript, Gulp, Git, NPM
+            </p>
+            <a href="https://18vek.spb.ru" class="work__link" target="_blank">
+              View this project
+            </a>
+            <a href="https://github.com/XeniaTkacheva/SPB_18vek_wp" class="work__link" target="_blank">
+              View project's code
+            </a>
+          </div>
+          <a href="#" class="work__picture">
+            <picture>
+              <img src="img/work2.jpg" alt="Photo my work" class="work__image" width="280" height="280">
+            </picture>
+          </a>
+        </li>
+        <li class="works__item work">
+          <div class="work__description">
+            <h3 class="work__title">
+              Project "Mishka" (adaptive markup)
+            </h3>
+            <p class="work__about">
+              This is a wonderful project.
+            </p>
+            <p class="work__technologies">
+              <span>Technologies used: </span><br>
+              HTML5, CSS3, SASS, JavaScript, Gulp, Git, NPM
+            </p>
+            <a href="https://myweb.xenia-tkacheva.ru/" class="work__link" target="_blank">
+              View this project
+            </a>
+            <a href="https://github.com/XeniaTkacheva/830487-mishka" class="work__link" target="_blank">
+              View project's code
+            </a>
+          </div>
+          <a href="#" class="work__picture">
+            <picture>
+              <img src="img/work4.jpg" alt="Photo my work" class="work__image" width="280" height="280">
+            </picture>
+          </a>
+        </li>
+        <li class="works__item work">
+          <div class="work__description">
+            <h3 class="work__title">
+              Project "Russian XVIII" Static Markup + JS
+            </h3>
+            <p class="work__about">
+              This is a wonderful project.
+            </p>
+            <p class="work__technologies">
+              <span>Technologies used: </span><br>
+              HTML5, CSS3, SASS, JavaScript, Gulp, Git, NPM
+            </p>
+            <a href="https://18vek.spb.ru" class="work__link" target="_blank">
+              View this project
+            </a>
+            <a href="https://github.com/XeniaTkacheva/SPB_18wek" class="work__link" target="_blank">
+              View project's code
+            </a>
+          </div>
+          <a href="#" class="work__picture">
+            <picture>
+              <img src="img/work3.jpg" alt="Photo my work" class="work__image" width="280" height="280">
+            </picture>
+          </a>
+        </li>
+
+        <li class="works__item work">
+          <div class="work__description">
+            <h3 class="work__title">
+              Project "Gllacy" (static markup)
+            </h3>
+            <p class="work__about">
+              This is a wonderful project.
+            </p>
+            <p class="work__technologies">
+              <span>Technologies used: </span><br>
+              HTML5, CSS3, SASS, JavaScript, Git
+            </p>
+            <a href="https://gllacy.xenia-tkacheva.ru" class="work__link" target="_blank">
+              View this project
+            </a>
+            <a href="https://github.com/XeniaTkacheva/830487-gllacy" class="work__link" target="_blank">
+              View project's code
+            </a>
+          </div>
+          <a href="#" class="work__picture">
+            <picture>
+              <img src="img/work5.jpg" alt="Photo my work" class="work__image" width="280" height="280">
+            </picture>
+          </a>
+        </li>
+
+
+      </ul>
+    </div>
+  </section>
+
+
+</main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <p class="page-footer__tags">#visitseewen</p>
+    <div class="page-footer__social social">
+      <ul class="social__list default-list">
+        <li class="social__item button">
+          <a href="https://twitter.com/XeniaBurki" class="social__link social__link--twitter" target="_blank" title="Xenia in Twitter">
+            <span class="visually-hidden">Xenia in Twitter</span>
+            <svg class="social__link-image social__link-image--twitter" width="15" height="28">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item button">
+          <a href="https://www.linkedin.com/in/xeniaweb" class="social__link social__link--linkedin" target="_blank" title="Xenia on Linkedin">
+            <span class="visually-hidden">Xenia on Linkedin</span>
+            <svg class="social__link-image social__link-image--fb" width="16" height="16">
+              <use xlink:href="#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item button">
+          <a href="https://www.youtube.com/channel/UCKSXl_LlBNShvPMrxCDIcYw" class="social__link social__link--youtube" target="_blank" title="Xenia on Youtube">
+            <span class="visually-hidden">Xenia on Youtube</span>
+            <svg class="social__link-image social__link-image--youtube" width="20" height="14">
+              <use xlink:href="#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <small class="copyright__text">developed by </small>
+      <a class="copyright__link" href="https://xeniaweb.ch" target="_blank" title="Xenia WEB">
+        <span class="visually-hidden">Oksana Burki</span>
+        <svg class="copyright__logo" width="27" height="34">
+          <use xlink:href="#icon-logo-xeniaweb"></use>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

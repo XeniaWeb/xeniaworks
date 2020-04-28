@@ -28,7 +28,17 @@
     flex-wrap: wrap;
   }
 
+  .site-list__item a {
+    padding: 15px 10px;
+    font-size: 16px;
+    line-height: 26px;
+    color: $color-dark;
+  }
+
   .site-list__item {
+    display: flex;
+    justify-content: center;
+    position: relative;
     max-width: 153px;
     background: $white;
     box-shadow: none;
@@ -37,15 +47,17 @@
     &:nth-child(6) {
       margin-right: 156px;
     }
-  }
 
-  .site-list__item a {
-    padding: 15px 10px;
-    //font-family: "PT Sans-Bold", "Arial", sans-serif;
-    font-size: 16px;
-    line-height: 26px;
-    //font-weight: 700;
-    color: $color-dark;
+    &--home {
+      display: none;
+    }
+
+    &--active a {
+      display: inline-block;
+      font-weight: 700;
+      color: $color-middle;
+      font-size: 16px;
+    }
   }
 }
 
