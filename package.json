@@ -48,6 +48,8 @@
   "dependencies": {
     "browserslist": "^4.11.1",
     "caniuse-lite": "^1.0.30001038",
-    "gulp-webp": "^4.0.1"
+    "deep-extend": "^0.6.0",
+    "gulp-webp": "^4.0.1",
+    "merge": "1.2.1"
   }
 }
