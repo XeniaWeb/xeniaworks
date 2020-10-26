@@ -43,7 +43,7 @@
     "source/sass/**/*.{sass,scss}"
   ],
   "engines": {
-    "node": "13.12"
+    "node": "14.10"
   },
   "dependencies": {
     "browserslist": "^4.11.1",

@@ -73,7 +73,8 @@ gulp.task("copy", function () {
     // "source/imgopt/*.webp",
     "source/js/**",
     "source/*.ico",
-    "source/*.html"
+    "source/*.html",
+    "source/manifest"
   ], {
     base: "source"
   })

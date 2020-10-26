@@ -1,0 +1,9 @@
+{
+  "short_name": "xeniaweb",
+  "name": "XeniaWeb Portfolio",
+  "icons": [{
+  }],
+  "start_url": "/",
+  "background_color": "#fafafa",
+  "theme_color": "#fafafa"
+}

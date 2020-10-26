@@ -40,7 +40,7 @@
     justify-content: center;
     position: relative;
     max-width: 153px;
-    background: $white;
+    background: transparent; //$white;
     box-shadow: none;
 
     &:nth-child(2),
@@ -64,7 +64,7 @@
 @media (min-width: $desktop-width) {
   .site-list__item {
     max-width: 239px;
-    background: $white;
+    background: transparent; // $white;
 
     &:nth-child(2),
     &:nth-child(6) {
