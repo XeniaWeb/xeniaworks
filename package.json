@@ -50,6 +50,6 @@
     "caniuse-lite": "^1.0.30001038",
     "deep-extend": "^0.6.0",
     "gulp-webp": "^4.0.1",
-    "merge": "1.2.1"
+    "merge": "2.1.1"
   }
 }
